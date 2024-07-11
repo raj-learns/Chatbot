@@ -1,0 +1,37 @@
+version: "3.1"
+
+stories:
+- story: greet and assist
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: function
+  - action: utter_function
+
+- story: define word
+  steps:
+  - intent: definition
+    entities:
+    - def_word: "ferocious"
+  - action: action_define_word
+
+- story: translate word
+  steps:
+  - intent: translate
+    entities:
+    - tra_word: "house"
+    - lang: "French"
+  - action: action_translate_word
+
+- story: synonym word
+  steps:
+  - intent: synonym
+    entities:
+    - syn_word: "hustle"
+  - action: action_synonym_word
+  
+
+- story: end of conversation
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
