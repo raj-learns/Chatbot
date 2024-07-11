@@ -1,0 +1,80 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+
+- intent: function
+  examples: |
+    - What can you do?
+    - What are your functions?
+    - How can you help me?
+
+- intent: definition
+  examples: |
+    - What is the meaning of [ferocious](def_word)?
+    - Define [happy](def_word)
+    - what is the meaing of [pseudonym](def_word)
+    - Meaning of [audacious](def_word)
+    - meaning of [gallantry](def_word)
+    - Explain [mellifluous](def_word)
+    - What do you mean by [random](def_word)?
+    - What is the definition of [class](def_word)?
+    - Can you tell me the meaning of [hunger](def_word)?
+    - explain [nostalgia](def_word)
+    - What do you mean by [constitution](def_word)?
+    - What is the meaning of [preamble](def_word)?
+    - Define [amazing](def_word)
+    - What is the definition of [life](def_word)?
+    - Explain [group](def_word)
+    - define [nemesis](def_word)
+    - define [constitution](def_word)
+    - What is the maening of [ordeal](def_word)
+    - Find meaning of [serendipity](def_word)
+
+- intent: synonym
+  examples: |
+    - What are the synonyms of [happy](syn_word)?
+    - Give me synonyms for [joyful](syn_word)
+    - Similar words to [sad](syn_word)
+    - synonyms for [nemesis](syn_word)
+    - synonyms of [nemesis](syn_word)
+    - Synonym for [hustle](syn_word)
+    - Synonyms for [jargon](syn_word)
+    - Give me synonyms of [federal](syn_word)
+    - Synonyms for [large](syn_word)
+    - Synonyms of [comedian](syn_word)
+    - Synonyms of [upholstery](syn_word)
+    - Synonyms of [soldier](syn_word)
+    - What are synonyms for [assort](syn_word)?
+    - synonyms for [anonymity](syn_word)
+    - Give me synonyms for [preamble](syn_word)
+    - What are synonyms for [constitution](syn_word)?
+
+- intent: translate
+  examples: |
+    - Translate [good morning](tra_word) to [French](lang)
+    - How do you say [I love you](tra_word) in [Telugu](lang)?
+    - What is the [Hindi](lang) word for [house](tra_word)?
+    - what is the [telugu](lang) word for [king](tra_word)
+    - Translate [mitochrondia is the powerhouse of cell](tra_word) in [hindi](lang)
+    - How to translate [see you later](tra_word) into [Tamil](lang)?
+    - Translate [have a nice day](tra_word) into [Malayalam](lang)
+    - translate [happy birthday](tra_word) in [Kannada](lang)
+    - what is the [telugu](lang) word for [gold](tra_word)
+    - translate [who are you](tra_word) in [telugu](lang)
+    - can you translate [thank you](tra_word) in [telugu](lang)
+    - what is [hindi](lang) translation for [hi, how are you](tra_word)
+    - how do you say [nice to meet you](tra_word) in [tamil](lang)
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - see you later
+    - bye
+    - talk to you later
