@@ -1,0 +1,4 @@
+rasa==3.6.20
+rasa-sdk>=3.6.2,<3.7.0
+sqlalchemy<2.0
+nltk==3.8.1

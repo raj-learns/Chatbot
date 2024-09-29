@@ -1,0 +1,65 @@
+version: "3.1"
+
+intents:
+  - greet
+  - function
+  - definition
+  - translate
+  - synonym
+  - goodbye
+
+entities:
+  - def_word
+  - tra_word
+  - lang
+  - syn_word
+
+slots:
+  def_word:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: def_word
+  tra_word:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: tra_word
+  lang:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: lang
+  syn_word:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: syn_word
+  
+
+responses:
+  utter_greet:
+    - text: "Hello sir/madam, I am Cheeku, the chatbot. How may I assist you?"
+  utter_function:
+    - text: "I can help you in finding the meaning, synonym or in translation of any word."
+      # utter_definition:
+    #- text: "The definition of the word {def_word} is {def}. It is commonly used in sentences like this : {examples}"
+      # - text: "The meaning of the {def_word} is {def}. Example : {examples}."
+      # utter_translate:
+      #- text: "The translation of the {tra_word} in the language {lang} would be {tra}."
+      #- text: "One can say {tra_word} as {tra} in {lang}."
+      #utter_synonym:
+      #- text: "Here are the synonyms for the following {syn_word}: {syn}."
+      # - text: "The following are the synonyms of the {syn_word}: {syn}."
+  utter_goodbye:
+    - text: "Thank you for interacting with Cheeku. See you later."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_define_word
+  - action_translate_word
+  - action_synonym_word
+
