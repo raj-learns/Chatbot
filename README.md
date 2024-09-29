@@ -1,27 +1,37 @@
-**Project title** - **"Cheeku the chatbot"** <br>
-Description: It is a chatbot designed to provide the user meanings, synonyms of words and translations of phrases.
+### **Project Title: Cheeku - The Conversational Chatbot**
 
-**Installation** <br>
-To integrate google translate api, you have to follow the steps given below: <br>
-1.Install google cloud sdk <br>
-2.Enable google translate api <br>
-3.Set up authentication(I used service accounts, you have to change the code a little bit in actions.py if you are going to use another method) <br>
-4.Configure environmental variables <br>
-5.Install google-cloud-translate. <br>
-Optional <br>
-Set up a virtual environment(recommended). <br>
+#### **Overview**:
+Cheeku is an interactive chatbot designed to assist users in finding word definitions, synonyms, and translating phrases between languages. It's built to help with quick language-related queries and supports multilingual translation capabilities.
 
-**Usage** <br>
-I recommend once going through rasa documentation. It will provide you with an understanding of how the project works.For using the chatbot you can go through the following steps: <br>
-Run the following commands in two separate terminal windows: <br>
--rasa run --cors "*" <br>
--rasa run actions <br>
-Then open the html file linked to the project. Chatbot will be up and running in the default web browser. <br>
+#### **Setup & Installation**:
+To integrate Google Translate API into the project, follow these steps:
 
+1. Install the **Google Cloud SDK** to interact with Google's cloud services.
+2. Enable the **Google Translate API** through the Google Cloud Console.
+3. Set up authentication. This project uses **service accounts** by default, but you can modify the code in `actions.py` if you're using another authentication method.
+4. Configure your system’s environment variables to include the necessary API credentials.
+5. Install the `google-cloud-translate` package using pip.
 
-**Contributions** <br>
-If you are open to contributions, I would suggest the following: <br>
--Train more data in nlu.yml <br>
--Integrate text to speech google api so that pronunciation of words can be done <br>
--There is a scope of improvement in the frontend development of website <br>
+**Optional but Recommended:**
+- Set up a virtual environment for your project to manage dependencies effectively.
+
+#### **How to Use**:
+Before using the chatbot, it's a good idea to familiarize yourself with the Rasa framework by reviewing the [Rasa documentation](https://rasa.com/docs/). Once ready, follow these steps to run the chatbot:
+
+1. Open two terminal windows.
+2. In one terminal, run:
+   ```bash
+   rasa run --cors "*"
+   ```
+3. In the second terminal, execute:
+   ```bash
+   rasa run actions
+   ```
+4. Finally, open the accompanying HTML file in your web browser. Your chatbot will now be accessible, ready to assist with your language queries!
+
+#### **Future Improvements & Contributions**:
+Contributions to this project are welcome! Some areas that can be enhanced include:
+- Expanding the training data in the `nlu.yml` file for better user interaction.
+- Integrating the Google **Text-to-Speech API** for voice-based responses, enabling users to hear pronunciations.
+- Improving the design and functionality of the frontend to create a better user experience.
 
